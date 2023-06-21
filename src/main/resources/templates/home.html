@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Best-of-the-year</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.0/css/bootstrap.min.css}" />
 </head>
 <body>
     <h1>Best-of-the-year by <span th:text="${name}"></span></h1>
+    <ul>
+        <li>
+            <a th:href="@{/movies}">Movies</a>
+        </li>
+        <li>
+            <a th:href="@{/songs}">Songs</a>
+        </li>
+    </ul>
 </body>
 </html>
